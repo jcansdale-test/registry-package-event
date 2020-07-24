@@ -1,6 +1,5 @@
 on:
   registry_package:
-    types: [updated]
 
 jobs:
   build:
