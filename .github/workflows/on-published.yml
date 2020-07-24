@@ -8,4 +8,7 @@ jobs:
     steps:
     - run: echo A package was published!
 
-    - run: echo ${{ toJson(github) }}
+    - name: Dump GitHub context
+      env:
+        GITHUB_CONTEXT: ${{ toJson(github) }}
+      run: echo "$GITHUB_CONTEXT"
