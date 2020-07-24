@@ -1,6 +1,6 @@
 on:
   registry_package:
-    action: [published]
+    types: [updated]
 
 jobs:
   build:
@@ -8,3 +8,5 @@ jobs:
 
     steps:
     - run: echo A package was published!
+
+    - run: echo ${{ toJson(github) }}
