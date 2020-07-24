@@ -1,0 +1,10 @@
+on:
+  registry_package:
+    types: [published]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - run: echo A package was published!
