@@ -1,6 +1,6 @@
 on:
   registry_package:
-    action: publishedx
+    action: [publishedx]
 
   watch:
     types: started
