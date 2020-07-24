@@ -1,5 +1,6 @@
 on:
   registry_package:
+    name: registry-package-eventx    
   watch:
 
 jobs:
