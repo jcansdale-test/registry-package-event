@@ -1,5 +1,6 @@
 on:
   registry_package:
+    action: [published]
 
 jobs:
   build:
