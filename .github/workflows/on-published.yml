@@ -1,7 +1,6 @@
 on:
   registry_package:
     action: [published]
-    name: [registry-package-eventx]
 
   watch:
     action: [started]
