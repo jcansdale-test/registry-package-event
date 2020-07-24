@@ -1,9 +1,9 @@
 on:
   registry_package:
-    action: [published,bar]
+    action: [published]
 
   watch:
-    action: [started,foo]
+    action: [started]
 
 jobs:
   build:
