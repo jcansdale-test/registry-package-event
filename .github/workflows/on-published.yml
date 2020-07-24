@@ -1,9 +1,9 @@
 on:
   registry_package:
-    action: published
+    action: publishedx
 
   watch:
-    types: [started]
+    types: started
 
 jobs:
   build:
