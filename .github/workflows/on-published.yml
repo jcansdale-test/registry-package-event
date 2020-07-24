@@ -3,7 +3,7 @@ on:
     action: [publishedx]
 
   watch:
-    types: started
+    action: [startedx]
 
 jobs:
   build:
