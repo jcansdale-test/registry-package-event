@@ -1,6 +1,8 @@
 on:
   registry_package:
     action: [published]
+  watch:
+    types: [started]
 
 jobs:
   build:
