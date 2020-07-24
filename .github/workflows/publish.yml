@@ -1,6 +1,5 @@
 on:
   push:
-    branches: [ master ]
 
 jobs:
   build:
@@ -21,5 +20,9 @@ jobs:
         npm version 1.0.0-g${{ github.sha }}
 
     - run: npm publish
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.PUBLISH_PACKAGES }}
+
+    - run: npm unpublish "@${{ github.repository }}@1.0.0-g${{ github.sha }}"
       env:
         NODE_AUTH_TOKEN: ${{ secrets.PUBLISH_PACKAGES }}
