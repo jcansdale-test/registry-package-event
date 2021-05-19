@@ -1,5 +1,5 @@
 on:
-  registry_package:
+  package:
     types: [published]
 
 jobs:
