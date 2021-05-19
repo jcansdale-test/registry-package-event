@@ -20,7 +20,7 @@ jobs:
     - run: |
         git config --global user.email "you@example.com"
         git config --global user.name "Your Name"
-        npm version 1.0.0-g${{ github.sha }}
+        npm version 1.0.0-g${{ github.sha }}-${{ github.run_id }}
 
     - run: npm publish
       env:
